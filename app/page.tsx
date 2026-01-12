@@ -66,7 +66,6 @@ export default function TrashReportApp() {
   const handleReportTrash = () => {
     alert("📸 Opening camera to report waste...");
   };
-
   const trashReports = [
     { id: 1, lat: 10.8251, lng: 106.6277, type: "plastic", status: "pending", reward: 50 },
     { id: 2, lat: 10.8221, lng: 106.6317, type: "general", status: "processing", reward: 30 },
