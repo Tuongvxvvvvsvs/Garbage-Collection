@@ -14,7 +14,8 @@ import {
   Sparkles,
   TrendingUp,
   Award,
-  Zap
+  Zap,
+  MessageSquare
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -321,7 +322,20 @@ export default function Header() {
                             My Profile
                           </span>
                         </button>
-
+                        <button
+                          onClick={() => {
+                            router.push("/citizen/complaints");
+                            setShowUserMenu(false);
+                          }}
+                          className="w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-linear-to-r hover:from-purple-50 hover:to-pink-50 transition-all group"
+                        >
+                          <div className="p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors">
+                            <MessageSquare className="w-4 h-4 text-purple-600" />
+                          </div>
+                          <span className="font-medium text-gray-700">
+                            Khiếu nại của tôi
+                          </span>
+                        </button>
                         <button
                           onClick={() => router.push("/settings")}
                           className="w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-linear-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group"
