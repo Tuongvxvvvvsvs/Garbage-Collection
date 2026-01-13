@@ -12,8 +12,9 @@ import MapView from "./components/MapView";
 import Footer from "@/components/Footer";
 
 export default function TrashReportApp() {
-  const [showNotifications, setShowNotifications] =
-    React.useState<boolean>(false);
+  const [showNotifications, setShowNotifications] = React.useState<boolean>(
+    false
+  );
 
   const handleReportTrash = () => {
     alert("📸 Opening camera to report waste...");
@@ -25,7 +26,7 @@ export default function TrashReportApp() {
       {/* Modern Header with Glassmorphism */}
       <div className="bg-white/80 backdrop-blur-xl shadow-sm sticky top-0 z-50 border-b border-gray-100">
         {/* Notifications Dropdown */}
-        {showNotifications && (
+        {showNotifications &&
           <div className="absolute top-full right-4 mt-2 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
             <div className="p-4 border-b border-gray-100 flex items-center justify-between">
               <h3 className="font-semibold text-gray-900">Notifications</h3>
@@ -37,8 +38,7 @@ export default function TrashReportApp() {
               </button>
             </div>
             <NotificationsDropdown />
-          </div>
-        )}
+          </div>}
       </div>
 
       {/* Two Column Layout */}
@@ -67,7 +67,7 @@ export default function TrashReportApp() {
 
       {/* Map Section */}
       <MapView />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
