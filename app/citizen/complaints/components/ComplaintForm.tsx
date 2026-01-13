@@ -107,7 +107,7 @@ const ComplaintForm: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-emerald-50 via-teal-50 to-cyan-50 p-4">
-      <div className="max-w-4xl mx-auto py-8">
+      <div className="">
         {/* Header */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-lg mb-4">

@@ -25,25 +25,29 @@ export default function AboutPage() {
     {
       icon: Leaf,
       title: "Sustainability",
-      desc: "We're committed to creating a sustainable future through innovative waste management solutions.",
+      desc:
+        "We're committed to creating a sustainable future through innovative waste management solutions.",
       color: "emerald"
     },
     {
       icon: Users,
       title: "Community First",
-      desc: "Building strong communities by empowering citizens to take action on environmental issues.",
+      desc:
+        "Building strong communities by empowering citizens to take action on environmental issues.",
       color: "blue"
     },
     {
       icon: Zap,
       title: "Innovation",
-      desc: "Leveraging cutting-edge technology to make waste collection efficient and rewarding.",
+      desc:
+        "Leveraging cutting-edge technology to make waste collection efficient and rewarding.",
       color: "yellow"
     },
     {
       icon: Heart,
       title: "Transparency",
-      desc: "Open and honest about our processes, impact, and the journey toward a cleaner planet.",
+      desc:
+        "Open and honest about our processes, impact, and the journey toward a cleaner planet.",
       color: "red"
     }
   ];
@@ -61,8 +65,8 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="relative bg-linear-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -mr-48 -mt-48"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full -ml-48 -mb-48"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -mr-48 -mt-48" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full -ml-48 -mb-48" />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 text-center">
@@ -86,7 +90,7 @@ export default function AboutPage() {
       {/* Stats Section */}
       <div className="max-w-6xl mx-auto px-4 -mt-16">
         <div className="grid md:grid-cols-4 gap-6">
-          {stats.map((stat, idx) => (
+          {stats.map((stat, idx) =>
             <div
               key={idx}
               className="bg-white rounded-3xl p-6 shadow-xl border border-gray-100 hover:shadow-2xl transition-all"
@@ -103,7 +107,7 @@ export default function AboutPage() {
                 {stat.label}
               </p>
             </div>
-          ))}
+          )}
         </div>
       </div>
 
@@ -155,7 +159,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, idx) => (
+            {values.map((value, idx) =>
               <div
                 key={idx}
                 className="bg-white rounded-3xl p-6 hover:shadow-xl transition-all border border-gray-100 group"
@@ -172,7 +176,7 @@ export default function AboutPage() {
                   {value.desc}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
@@ -241,7 +245,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
-            {team.map((member, idx) => (
+            {team.map((member, idx) =>
               <div
                 key={idx}
                 className="bg-white rounded-3xl p-6 text-center hover:shadow-xl transition-all border border-gray-100"
@@ -252,9 +256,11 @@ export default function AboutPage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-1">
                   {member.name}
                 </h3>
-                <p className="text-sm text-gray-600">{member.role}</p>
+                <p className="text-sm text-gray-600">
+                  {member.role}
+                </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
@@ -263,8 +269,8 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto px-4 py-20">
         <div className="bg-linear-to-r from-emerald-600 via-teal-600 to-cyan-600 rounded-3xl p-12 text-center text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full -mr-32 -mt-32"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full -ml-32 -mb-32"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full -mr-32 -mt-32" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full -ml-32 -mb-32" />
           </div>
 
           <div className="relative">
