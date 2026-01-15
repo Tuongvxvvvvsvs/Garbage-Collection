@@ -1,7 +1,7 @@
 import React from "react";
 
-const layout: React.FC = () => {
+const AdminLayout: React.FC = () => {
   return <div></div>;
 };
 
-export default layout;
+export default AdminLayout;
